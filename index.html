@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keshav Ahalawat | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#020617;color:#e2e8f0;overflow-x:hidden}
+#particles{position:fixed;width:100%;height:100%;z-index:-1}
+
+header{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px}
+
+h1{font-size:3rem;background:linear-gradient(90deg,#38bdf8,#6366f1);-webkit-background-clip:text;color:transparent}
+.subtitle{opacity:.7;margin-top:10px}
+.summary{max-width:750px;margin-top:20px;line-height:1.6}
+
+.btn{
+margin:10px;
+padding:12px 25px;
+border-radius:30px;
+border:none;
+background:linear-gradient(135deg,#38bdf8,#6366f1);
+color:#fff;
+cursor:pointer;
+transition:.3s;
+text-decoration:none;
+display:inline-block;
+}
+.btn:hover{transform:scale(1.08)}
+
+section{padding:70px 10%}
+h2{margin-bottom:30px;font-size:2rem}
+
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}
+
+.card{
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(15px);
+border-radius:18px;
+padding:20px;
+transition:.3s;
+box-shadow:0 0 20px rgba(0,0,0,0.4)
+}
+.card:hover{transform:translateY(-12px) scale(1.03)}
+
+.tags{font-size:.8rem;opacity:.7;margin-top:10px}
+
+.links a{
+display:inline-block;
+margin-top:10px;
+margin-right:10px;
+color:#38bdf8;
+}
+
+.skills span{
+display:inline-block;
+background:#1e293b;
+padding:8px 14px;
+margin:6px;
+border-radius:10px;
+}
+
+footer{text-align:center;padding:20px;opacity:.6}
+</style>
+</head>
+
+<body>
+
+<div id="particles"></div>
+
+<header>
+<h1>Keshav Ahalawat</h1>
+<p class="subtitle">Android Developer • Full Stack • Data Enthusiast</p>
+
+<p class="summary">
+BCA undergraduate with hands-on experience in Android development and full-stack data-driven applications. Skilled in Kotlin, Firebase, and distributed systems. Strong problem-solving ability with a focus on performance and real-world implementation. Also experienced in Excel and BPO work.
+</p>
+
+<button class="btn" onclick="scrollToProjects()">View Projects</button>
+<button class="btn" onclick="openResume()">View Resume</button>
+
+<!-- ✅ FIXED DOWNLOAD BUTTON -->
+<a href="resume.pdf" download="Keshav_Ahalawat_Resume.pdf" class="btn">
+Download Resume
+</a>
+
+</header>
+
+<section id="projects">
+<h2>🚀 Projects</h2>
+
+<div class="projects">
+
+<div class="card">
+<h3>GEU Attendance System</h3>
+<p>Reduced attendance errors by 40% using biometric + CameraX automation.</p>
+<div class="tags">Kotlin • Firebase</div>
+<div class="links">
+<a href="https://github.com/eagleeye1712/GEU1.git" target="_blank">GitHub</a>
+</div>
+</div>
+
+<div class="card">
+<h3>Instagram Trend Analyzer</h3>
+<p>Big data pipeline for analyzing social media trends.</p>
+<div class="tags">Python • PySpark</div>
+<div class="links">
+<a href="https://github.com/eagleeye1712/instagram_trend_analyzer.git" target="_blank">GitHub</a>
+</div>
+</div>
+
+<div class="card">
+<h3>File Sharing System</h3>
+<p>Cross-platform file transfer using socket programming.</p>
+<div class="tags">C++</div>
+<div class="links">
+<a href="https://github.com/eagleeye1712/file-shareing-sys.git" target="_blank">GitHub</a>
+</div>
+</div>
+
+<div class="card">
+<h3>Martial Arts Website</h3>
+<p>Responsive real-world deployed website.</p>
+<div class="tags">HTML • CSS • JS</div>
+<div class="links">
+<a href="https://mrityunjayakalarikendradehradun.netlify.app" target="_blank">Live</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2>🧠 Why Hire Me</h2>
+<p>I build complete real-world applications with focus on performance, usability, and scalability and can handle data handling work .</p>
+</section>
+
+<section>
+<h2>🛠 Skills</h2>
+<div class="skills">
+<span>Kotlin</span>
+<span>Firebase</span>
+<span>C++</span>
+<span>Web Development</span>
+<span>Excel</span>
+</div>
+</section>
+
+<section>
+<h2>📫 Contact</h2>
+<p>Phone: 7217477123</p>
+<p>Email: jaatkeshav0@gmail.com</p>
+</section>
+
+<footer>
+<p>© 2026 Keshav Ahalawat</p>
+</footer>
+
+<!-- Resume Modal -->
+<div id="resumeModal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:#000000cc;z-index:999;overflow:auto">
+
+<div style="background:#0f172a;margin:3% auto;padding:30px;border-radius:12px;width:85%;max-width:1000px">
+
+<h2>Keshav Ahalawat</h2>
+<p><b>Phone:</b> 7217477123 | <b>Email:</b> jaatkeshav0@gmail.com</p>
+
+<h3>Summary</h3>
+<p>
+BCA undergraduate with strong development skills and experience in Android, web, and data-driven applications. Also experienced in Excel and BPO operations.
+</p>
+
+<h3>Education</h3>
+<p>
+10th – New Green Light High School (50%)<br>
+12th – NIOS (63.71%)<br>
+BCA – Graphic Era Hill University (Still Pursuing)
+</p>
+
+<button class="btn" onclick="closeResume()">Close</button>
+
+</div>
+</div>
+
+<script>
+tsParticles.load("particles", {
+particles:{number:{value:40},size:{value:3},move:{speed:1},links:{enable:true}}
+});
+
+function scrollToProjects(){
+document.getElementById("projects").scrollIntoView({behavior:"smooth"});
+}
+
+function openResume(){
+document.getElementById("resumeModal").style.display="block";
+}
+
+function closeResume(){
+document.getElementById("resumeModal").style.display="none";
+}
+</script>
+
+</body>
+</html>
